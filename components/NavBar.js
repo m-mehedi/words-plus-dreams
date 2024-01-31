@@ -19,7 +19,7 @@ const NavBar = ({
   //Keys cannot be forwarded to the component as it is a special prop
   // console.log(key)
   return (
-    <div className="flex justify-between flex-col items-center md:flex-row md:justify-start py-1 shadow-md sticky top-0 z-10 bg-white dark:bg-gray-900 dark:shadow-gray-500">
+    <div className="flex justify-between flex-col items-center md:flex-row md:justify-start py-1 shadow-sm sticky top-0 z-10 bg-white dark:bg-gray-900 dark:shadow-gray-500">
       <div className="mx-5">
         <Link href={"/"}>
           <a>
@@ -29,24 +29,14 @@ const NavBar = ({
       </div>
       <div className="nav">
         <ul className="flex items-center space-x-4 font-bold md:text-base dark:text-gray-100">
-          <Link href="/cpp">
+          <Link href="/novel">
             <a>
-              <li>C++</li>
+              <li>Novel</li>
             </a>
           </Link>
-          <Link href="/java">
+          <Link href="/stories">
             <a>
-              <li>Java</li>
-            </a>
-          </Link>
-          <Link href="/python">
-            <a>
-              <li>Python</li>
-            </a>
-          </Link>
-          <Link href="/others">
-            <a>
-              <li>Others</li>
+              <li>Stories</li>
             </a>
           </Link>
           <Link href="/all">

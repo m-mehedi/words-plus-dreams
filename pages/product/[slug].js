@@ -2,6 +2,7 @@
 import { useRouter } from "next/router";
 import mongoose from "mongoose";
 import Book from "../../models/Book";
+import Link from 'next/link';
 
 const Post = ({ addToCart, book }) => {
   const router = useRouter();
@@ -21,7 +22,7 @@ const Post = ({ addToCart, book }) => {
               <h2 className="text-sm title-font text-gray-500 tracking-widest dark:text-gray-300">
                 {book.author}
               </h2>
-              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 dark:text-orange-400">
+              <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 dark:text-green-400">
                 {book.title}
               </h1>
               <div className="flex mb-4">
@@ -156,10 +157,10 @@ const Post = ({ addToCart, book }) => {
                 </div>
               </div> */}
               <div className="flex mt-14">
-                <span className="title-font font-medium text-2xl text-gray-900 dark:text-orange-400">
-                  ₹ {book.price}
+                <span className="title-font font-medium text-2xl text-gray-900 dark:text-green-400">
+                  $ {book.price}
                 </span>
-                <button
+                {/* <button
                   onClick={() => {
                     addToCart(
                       book.slug,
@@ -169,9 +170,15 @@ const Post = ({ addToCart, book }) => {
                       book.author
                     );
                   }}
-                  className="flex ml-auto mr-16 text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded "
+                  className="flex ml-auto mr-16 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded "
                 >
                   Add to Cart
+                </button> */}
+                <button
+                  onClick = { () => location.href = `${book.link}`}
+                  className="flex ml-auto mr-16 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded "
+                >
+                  Buy
                 </button>
                 {/* <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <svg

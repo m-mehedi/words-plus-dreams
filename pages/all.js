@@ -34,7 +34,7 @@ const All = ({ books }) => {
                       <h2 className="text-gray-700 dark:text-white title-font text-base font-medium">
                         {item.author}
                       </h2>
-                      <p className="mt-1 dark:text-white">₹{item.price}</p>
+                      <p className="mt-1 dark:text-white">${item.price}</p>
                     </div>
                   </div>
                 </Link>

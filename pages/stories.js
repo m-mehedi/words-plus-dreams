@@ -5,7 +5,7 @@ import Book from "../models/Book";
 import mongoose from "mongoose";
 import { capitalize } from "@mui/material";
 
-const Python = ({ books }) => {
+const Stories = ({ books }) => {
   //console.log(books);
   return (
     <div>
@@ -15,7 +15,7 @@ const Python = ({ books }) => {
             {books.map((item) => {
               return (
                 <Link passHref={true} key={item._id} href={`/product/${item.slug}`}>
-                  <div className="lg:w-1/4 md:w-1/2 p-10 w-full cursor-pointer shadow-lg hover:scale-125 hover:bg-white dark:hover:bg-gray-700 dark:bg-gray-900 dark:shadow-orange-600 duration-500">
+                  <div className="lg:w-1/4 md:w-1/2 p-10 w-full cursor-pointer shadow-lg hover:scale-125 hover:bg-white dark:hover:bg-gray-700 dark:bg-gray-900 duration-500">
                     <a className="block relative rounded overflow-hidden">
                       <img
                         alt="ecommerce"
@@ -33,7 +33,7 @@ const Python = ({ books }) => {
                       <h2 className="text-gray-700 dark:text-white title-font text-base font-medium">
                         {item.author}
                       </h2>
-                      <p className="mt-1 dark:text-white">₹{item.price}</p>
+                      <p className="mt-1 dark:text-white">${item.price}</p>
                     </div>
                   </div>
                 </Link>
@@ -49,10 +49,10 @@ export async function getServerSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     await mongoose.connect(process.env.MONGO_URI);
   }
-  let books = await Book.find({category:"python"});
+  let books = await Book.find({category:"stories"});
   return {
     props: { books: JSON.parse(JSON.stringify(books)) }, // will be passed to the page component as props
   };
 }
 
-export default Python;
+export default Stories;

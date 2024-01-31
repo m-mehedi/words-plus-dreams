@@ -20,7 +20,7 @@ const handler = async (req, res) => {
           { email: req.body.email },
           process.env.RP_Key,
           {
-            expiresIn: "1d",
+            expiresIn: "30d",
           }
         );
         // console.log(token);

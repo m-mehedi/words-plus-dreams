@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("hey i am nandan useeffect from app.js");
+    console.log("Developed by MEHEDI HASAN.");
     router.events.on('routeChangeStart', ()=>{
       setProgress(40)
     } )
