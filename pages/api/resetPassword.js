@@ -28,7 +28,7 @@ const handler = async (req, res) => {
           email: req.body.email,
           token: token,
         });
-        let email = `We have sent you this email in response to your request to reset your password on NV Bookstore. 
+        let email = `We have sent you this email in response to your request to reset your password on Words and Dreams. 
   
       To reset your password, please follow the link below:
       

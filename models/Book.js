@@ -11,6 +11,7 @@ const BookSchema = new mongoose.Schema({
     link: { type : String , required : true},
     category: { type : String },
     price: { type : Number , required : true},
+    rating: { type : Number , required : false},
     availableQuantity: { type : Number , required : true},
   },
   {timestamps:true});

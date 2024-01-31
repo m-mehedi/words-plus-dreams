@@ -26,7 +26,7 @@ module.exports = {
     require('tailwind-typewriter')({
         wordsets: {
             bookstore: {
-                words: ['Welcome to the bookstore', 'Created by Nandan Vyas'],
+                words: ['Welcome to Words and Dreams', 'We communicate, we dream wistfully about the past and predict the future with hope and fear as we struggle to create our vision of a perfect world. Welcome to ever more words…and dreams'],
                 delay: 3
             }
         }

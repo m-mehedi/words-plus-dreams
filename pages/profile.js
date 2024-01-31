@@ -158,7 +158,7 @@ const Profile = () => {
         draggable
         pauseOnHover
       />
-      <div className=" text-3xl text-center font-bold py-8 dark:text-orange-300 ">
+      <div className=" text-3xl text-center font-bold py-8 dark:text-green-300 ">
         Profile{" "}
       </div>
       <Delivery2
@@ -181,18 +181,18 @@ const Profile = () => {
 
       <button
         onClick={handleUpdateDetails}
-        className="disabled:bg-orange-200 flex mr-4 mt-5 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-sm"
+        className="disabled:bg-green-200 flex mr-4 mt-5 text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-sm"
       >
         Update Details
       </button>
 
-      <div className="text-xl font-semibold my-6 dark:text-orange-300">
+      <div className="text-xl font-semibold my-6 dark:text-green-300">
         2. Change Password
       </div>
       <div className="w-1/2 mb-4">
         <label
           htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-orange-50"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-green-50"
         >
           Password
         </label>
@@ -203,14 +203,14 @@ const Profile = () => {
           name="password"
           id="password"
           placeholder="••••••••"
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-300 dark:placeholder-gray-400 dark:text-orange-200 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-300 dark:placeholder-gray-400 dark:text-green-200 dark:focus:ring-green-500 dark:focus:border-green-500"
           required=""
         />
       </div>
       <div className="w-1/2 mb-4">
         <label
           htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-orange-50"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-green-50"
         >
           New Password
         </label>
@@ -221,14 +221,14 @@ const Profile = () => {
           name="newpassword"
           id="newpassword"
           placeholder="••••••••"
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-300 dark:placeholder-gray-400 dark:text-orange-200 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-300 dark:placeholder-gray-400 dark:text-green-200 dark:focus:ring-green-500 dark:focus:border-green-500"
           required=""
         />
       </div>
       <div className="w-1/2 mb-6">
         <label
           htmlFor="confirmpassword"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-orange-50"
+          className="block mb-2 text-sm font-medium text-gray-900 dark:text-green-50"
         >
           Confirm New password
         </label>
@@ -239,13 +239,13 @@ const Profile = () => {
           name="confirmnewpassword"
           id="confirmnewpassword"
           placeholder="••••••••"
-          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-300 dark:placeholder-gray-400 dark:text-orange-200 dark:focus:ring-orange-500 dark:focus:border-orange-500"
+          className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-300 dark:placeholder-gray-400 dark:text-green-200 dark:focus:ring-green-500 dark:focus:border-green-500"
           required=""
         />
       </div>
       <button
         onClick={handleUpdatePassword}
-        className="disabled:bg-orange-200 flex mr-4 mt-5 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-sm"
+        className="disabled:bg-green-200 flex mr-4 mt-5 text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-sm"
       >
         Update Password
       </button>

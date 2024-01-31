@@ -71,16 +71,16 @@ const SideBar = ({
           <div
             onMouseEnter={() => setProfileDropdown(true)}
             onMouseLeave={() => setProfileDropdown(false)}
-            className="bg-orange-50 rounded-md w-20 h-24 text-sm p-2 dark:text-orange-600 dark:bg-gray-700 absolute top-6 right-8"
+            className="bg-green-50 rounded-md w-20 h-24 text-sm p-2 dark:text-green-600 dark:bg-gray-700 absolute top-6 right-8"
           >
             <ul className="">
-              <li className="pb-1 hover:text-gray-500 dark:hover:text-orange-200 font-bold">
+              <li className="pb-1 hover:text-gray-500 dark:hover:text-green-200 font-bold">
                 <Link href="/profile">Profile</Link>
               </li>
-              <li className="pb-1 hover:text-gray-500 dark:hover:text-orange-200 font-bold">
+              <li className="pb-1 hover:text-gray-500 dark:hover:text-green-200 font-bold">
                 <Link href="/orders">Orders</Link>
               </li>
-              <li className=" hover:text-gray-500 dark:hover:text-orange-200 font-bold">
+              <li className=" hover:text-gray-500 dark:hover:text-green-200 font-bold">
                 <a onClick={logout}>Logout</a>
               </li>
             </ul>
@@ -89,18 +89,18 @@ const SideBar = ({
         {!user.value && (
           <Link href={"/login"}>
             <a>
-              <MdAccountCircle className="text-xl mx-2 md:text-2xl dark:text-orange-300" />
+              <MdAccountCircle className="text-xl mx-2 md:text-2xl dark:text-green-300" />
             </a>
           </Link>
         )}
         <AiOutlineShoppingCart
           onClick={toggleCart}
-          className="text-xl md:text-2xl dark:text-orange-300 "
+          className="text-xl md:text-2xl dark:text-green-300 "
         />
       </div>
       <div
         ref={ref}
-        className={`sidebar w-72 h-[100vh]  absolute top-0 right-0 bg-orange-100 dark:bg-orange-600  px-6 py-10 transform transition-transform ${
+        className={`sidebar w-72 h-[100vh]  absolute top-0 right-0 bg-green-100 dark:bg-green-600  px-6 py-10 transform transition-transform ${
           Object.keys(cart).length === 0 ? "translate-x-full hidden" : "translate-x-0"
         }`}
         // overflow-y-scroll
@@ -111,7 +111,7 @@ const SideBar = ({
           onClick={toggleCart}
           className="absolute top-2 right-2 cursor-pointer "
         >
-          <AiOutlineCloseCircle className="text-2xl text-orange-600 dark:text-black" />
+          <AiOutlineCloseCircle className="text-2xl text-green-600 dark:text-black" />
         </span>
         <ol className="list-decimal font-bold">
           {Object.keys(cart).length == 0 && (
@@ -135,7 +135,7 @@ const SideBar = ({
                           cart[k].author
                         );
                       }}
-                      className="mx-2 text-xl text-orange-600 cursor-pointer dark:text-black "
+                      className="mx-2 text-xl text-green-600 cursor-pointer dark:text-black "
                     />
                     {cart[k].qty}
                     <AiOutlinePlusCircle
@@ -148,7 +148,7 @@ const SideBar = ({
                           cart[k].author
                         );
                       }}
-                      className="mx-2 text-xl cursor-pointer text-orange-600 dark:text-black"
+                      className="mx-2 text-xl cursor-pointer text-green-600 dark:text-black"
                     />
                   </div>
                 </div>
@@ -156,16 +156,16 @@ const SideBar = ({
             );
           })}
         </ol>
-        <div className="my-2 font-bold">SubTotal : ₹ {subTotal} </div>
+        <div className="my-2 font-bold">SubTotal : $ {subTotal} </div>
         <div className="flex">
           <Link href={"/checkout"}>
-            <button className="flex mr-4 text-white dark:font-semibold dark:text-orange-500 bg-orange-500 dark:bg-gray-800 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 dark:hover:bg-gray-600 rounded text-lg">
+            <button className="flex mr-4 text-white dark:font-semibold dark:text-green-500 bg-green-500 dark:bg-gray-800 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 dark:hover:bg-gray-600 rounded text-lg">
               {" "}
               <BsFillCartCheckFill className="m-1" /> Checkout{" "}
             </button>
           </Link>
           <button
-            className="flex text-white dark:font-semibold dark:text-orange-500 bg-orange-500 dark:bg-gray-800 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 dark:hover:bg-gray-600 rounded text-lg"
+            className="flex text-white dark:font-semibold dark:text-green-500 bg-green-500 dark:bg-gray-800 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 dark:hover:bg-gray-600 rounded text-lg"
             onClick={clearCart}
           >
             {" "}

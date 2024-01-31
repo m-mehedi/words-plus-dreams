@@ -74,7 +74,7 @@ const Delivery2 = ({
 
   return (
     <>
-      <div className="text-xl font-semibold my-4 dark:text-orange-300">
+      <div className="text-xl font-semibold my-4 dark:text-green-300">
         1.Delivery Details
       </div>
       <ThemeProvider theme={theme}>
