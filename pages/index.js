@@ -71,19 +71,19 @@ const Home = ({ faqs }) => {
           width={5000}
           className=" opacity-30"
         />
-        {/* <div className="absolute top-1/3  w-full text-center  font-bold text-3xl text-orange-400 ">Welcome to the BookStore</div> */}
-        <div className="type-bookstore absolute top-1/3  w-full text-center font-bold text-xl md:text-2xl lg:text-3xl text-orange-300"></div>
+        {/* <div className="absolute top-1/3  w-full text-center  font-bold text-3xl text-gray-400 ">Welcome to the BookStore</div> */}
+        <div className="type-bookstore absolute top-1/3  w-full text-center font-bold text-xl md:text-2xl lg:text-3xl text-gray-300"></div>
       </div>
 
       <Mid />
       <div className="dark:bg-gray-900 px-5 md:px-10 lg:px-20">
-        <div className="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-orange-300 text-center my-4">
+        <div className="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-300 text-center my-4">
           Frequently Asked Questions
         </div>
-        {/* <div className="sm:text-2xl text-1xl font-medium title-font bg-orange-500 text-gray-900 dark:text-orange-300 text-center my-10">
+        {/* <div className="sm:text-2xl text-1xl font-medium title-font bg-gray-500 text-gray-900 dark:text-gray-300 text-center my-10">
           <a
             href={"/addFaqPage"}
-            className=" hover:text-gray-800 dark:hover:text-orange-800"
+            className=" hover:text-gray-800 dark:hover:text-gray-800"
           >
             Cant find your question ? Ask here.
           </a>
@@ -152,7 +152,7 @@ const Home = ({ faqs }) => {
               askQueryButtonClicked(userLoggedIn);
             }}
           >
-            <div className={"relative bg-orange-600 text-gray-50 border border-gray-500 rounded-lg text-center mb-4 mt-8 py-4 px-8 focus:outline-none hover:bg-orange-500 "}>
+            <div className={"relative bg-gray-600 text-gray-50 border border-gray-500 rounded-lg text-center mb-4 mt-8 py-4 px-8 focus:outline-none hover:bg-gray-500 "}>
             {userLoggedIn?"New Query? Ask Here!":"Login to Ask Your Question/Query "} 
             </div>
           </button>

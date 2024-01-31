@@ -13,13 +13,13 @@ const Search = ({ books }) => {
   //   console.log(regex)
   return (
     <div className="min-h-[50vh] dark:bg-gray-900">
-      <div className="text-xl font-normal  dark:text-orange-300 px-20 pt-10">
+      <div className="text-xl font-normal  dark:text-gray-300 px-20 pt-10">
         Showing search results for{" "}
         <span className="text-2xl font-semibold">
           &#34;{router.query.title}&#34;
         </span>
       </div>
-      {!books.length && <div className="px-20 pt-2 text-xl dark:text-orange-300">No Result found</div>}
+      {!books.length && <div className="px-20 pt-2 text-xl dark:text-gray-300">No Result found</div>}
       <div>
         <section className="text-gray-600 body-font dark:bg-gray-900">
           <div className="container px-5 py-24 mx-auto">
@@ -31,7 +31,7 @@ const Search = ({ books }) => {
                     key={item._id}
                     href={`/product/${item.slug}`}
                   >
-                    <div className="lg:w-1/4 md:w-1/2 p-10 w-full cursor-pointer shadow-lg hover:scale-125 hover:bg-white dark:hover:bg-gray-700 dark:bg-gray-900 dark:shadow-orange-600 duration-500">
+                    <div className="lg:w-1/4 md:w-1/2 p-10 w-full cursor-pointer shadow-lg hover:scale-125 hover:bg-white dark:hover:bg-gray-700 dark:bg-gray-900 duration-500">
                       <a className="block relative rounded overflow-hidden">
                         <img
                           alt="ecommerce"

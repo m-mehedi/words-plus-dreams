@@ -19,7 +19,7 @@ const NavBar = ({
   //Keys cannot be forwarded to the component as it is a special prop
   // console.log(key)
   return (
-    <div className="flex justify-between flex-col items-center md:flex-row md:justify-start py-1 shadow-md sticky top-0 z-10 bg-white dark:bg-gray-900 dark:shadow-orange-500">
+    <div className="flex justify-between flex-col items-center md:flex-row md:justify-start py-1 shadow-md sticky top-0 z-10 bg-white dark:bg-gray-900 dark:shadow-gray-500">
       <div className="mx-5">
         <Link href={"/"}>
           <a>
@@ -28,7 +28,7 @@ const NavBar = ({
         </Link>
       </div>
       <div className="nav">
-        <ul className="flex items-center space-x-4 font-bold md:text-base dark:text-orange-100">
+        <ul className="flex items-center space-x-4 font-bold md:text-base dark:text-gray-100">
           <Link href="/cpp">
             <a>
               <li>C++</li>
@@ -79,13 +79,13 @@ const NavBar = ({
               id="search"
               value={search}
               onChange={(e)=>{setSearch(e.target.value)}}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
               placeholder="Search"
             />
           </div>
           <Link href={`/search?title=${search}`}><button
             type="submit"
-            className="p-2.5 ml-1 text-sm font-medium text-white bg-orange-500 rounded-lg border border-orange-700 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-600 dark:focus:ring-orange-800"
+            className="p-2.5 ml-1 text-sm font-medium text-white bg-gray-500 rounded-lg border border-gray-700 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-600 dark:focus:ring-gray-800"
           >
             <svg
               className="w-5 h-4"
