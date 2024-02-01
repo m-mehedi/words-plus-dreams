@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import Head from "next/head";
-import Image from "next/image";
+import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import Mid from "../components/Mid";
@@ -9,8 +9,9 @@ import { useRouter } from "next/router";
 import AddFaqPage from "./addFaqPage";
 import CarouselCustomNavigation from "../components/Book";
 import Book from "../models/Book";
+import { capitalize } from "@mui/material";
 
-const Home = ({ faqs }) => {
+const Home = ({ faqs, books }) => {
   const [userLoggedIn, setUserLoggedIn] = useState(null);
   const [queryModelVisible,setQueryModelVisible] = useState(false);
   // const [animate,setAnimate] = useState(false);
@@ -70,13 +71,49 @@ const Home = ({ faqs }) => {
         <CarouselCustomNavigation />
         </div>
       <Mid />
+      
+    <div>
+      <section className="text-gray-600 body-font dark:bg-gray-900 pb-10">
+        <div className="container px-5 py-5 mx-auto">
+          <div className="flex flex-wrap -m-4 justify-center space-y-4">
+            {books.map((item) => {
+              return (
+                <Link passHref={true} key={item._id} href={`/product/${item.slug}`}>
+                  <div className="lg:w-1/4 md:w-1/2 p-10 w-full cursor-pointer shadow-lg hover:scale-110 hover:bg-white dark:hover:bg-gray-700 dark:bg-gray-900 duration-500">
+                    <a className="block relative rounded overflow-hidden">
+                      <img
+                        alt="ecommerce"
+                        className="h-[45vh] md:h-[35vh] m-auto  block"
+                        src={item.img}
+                      />
+                    </a>
+                    <div className="mt-4 text-center md:text-left">
+                      <h3 className="text-gray-500 dark:text-gray-200 text-xs tracking-widest title-font mb-1">
+                        {capitalize(item.category) }
+                      </h3>
+                      <h2 className="text-gray-900 dark:text-white title-font text-lg font-medium">
+                        {item.title}
+                      </h2>
+                      <h2 className="text-gray-700 dark:text-white title-font text-base font-medium">
+                        {item.author}
+                      </h2>
+                      <p className="mt-1 dark:text-white">${item.price}</p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    </div>
         {/* <div className="absolute top-1/3  w-full text-center  font-bold text-3xl text-gray-400 ">Welcome to the BookStore</div> */}
         {/* <div className="type-bookstore absolute top-1/3  w-full text-center font-bold text-xl md:text-2xl lg:text-3xl text-gray-300"></div> */}
       </div>
 
-      <div className="dark:bg-gray-900 px-5 md:px-10 lg:px-20">
-        <div className="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-300 text-center my-4">
-          Frequently Asked Questions
+      <div className="dark:bg-gray-900 px-5 py-15 md:px-10 lg:px-20">
+        <div className="sm:text-3xl py-15 text-2xl font-medium title-font text-gray-900 dark:text-gray-300 text-center my-4">
+          <PsychologyAltIcon className="text-3xl"/> <br/> Frequently Asked Questions
         </div>
         {/* <div className="sm:text-2xl text-1xl font-medium title-font bg-gray-500 text-gray-900 dark:text-gray-300 text-center my-10">
           <a

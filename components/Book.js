@@ -1,4 +1,5 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
  
 export function CarouselCustomNavigation() {
   return (
@@ -27,7 +28,7 @@ export function CarouselCustomNavigation() {
             </Typography>
             <div className="flex gap-2">
               <Button onClick={ () => {location.href = 'https://www.amazon.com/Still-Amazed-Collection-Miles-Beauchamp/dp/1734885734/'}} size="lg" color="white">
-                Buy
+               <ShoppingCartIcon /> Buy
               </Button>
             </div>
           </div>
@@ -57,7 +58,7 @@ export function CarouselCustomNavigation() {
             </Typography>
             <div className="flex gap-2">
               <Button onClick={ () => {location.href = 'https://www.amazon.com/Disabled-Literature-Examination-Disabilities-Contemporary-ebook/dp/B0116IBL5M/'}} size="lg" color="white">
-                Buy
+               <ShoppingCartIcon /> Buy
               </Button>
             </div>
           </div>
@@ -87,7 +88,7 @@ export function CarouselCustomNavigation() {
             </Typography>
             <div className="flex gap-2">
               <Button onClick={ () => {location.href = 'https://www.amazon.com/Down-at-Pier-Miles-Beauchamp-ebook/dp/B0817R38CK/'}} size="lg" color="white">
-                Buy
+               <ShoppingCartIcon /> Buy
               </Button>
             </div>
           </div>

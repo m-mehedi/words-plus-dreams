@@ -29,19 +29,24 @@ const NavBar = ({
       </div>
       <div className="nav">
         <ul className="flex items-center space-x-4 font-bold md:text-base dark:text-gray-100">
-          <Link href="/novel">
+          <Link href="/">
             <a>
-              <li>Novel</li>
-            </a>
-          </Link>
-          <Link href="/stories">
-            <a>
-              <li>Stories</li>
+              <li>Home</li>
             </a>
           </Link>
           <Link href="/all">
             <a>
-              <li>All</li>
+              <li>Books</li>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a>
+              <li>About</li>
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a>
+              <li>Contact Us</li>
             </a>
           </Link>
         </ul>
