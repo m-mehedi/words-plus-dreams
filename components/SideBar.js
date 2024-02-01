@@ -61,7 +61,7 @@ const SideBar = ({
               <Image
                 height={30}
                 width={30}
-                src="/logged-in.jpg"
+                src="/logged-in.png"
                 alt="User Logged In"
               />
             </a>

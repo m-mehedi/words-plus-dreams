@@ -161,7 +161,7 @@ const Footer = () => {
           <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
             <p className="text-gray-500  dark:text-green-200 text-sm text-center sm:ml-auto ">
               <a
-                href="https://github.com/mehedi.anamul"
+                href="https://github.com/m-mehedi"
                 rel="noopener noreferrer"
                 className=" ml-1"
                 target="_blank"
