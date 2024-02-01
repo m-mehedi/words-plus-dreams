@@ -8,16 +8,19 @@ const About = () => {
   const [color, setColor] = useState("gray-900")
   const [opacity, setOpacity] = useState("0")
   const [hidden, setHidden] = useState("")
-  return <div><div onMouseEnter={()=>{setColor("white"); setOpacity("100"); setHidden("")}} onMouseLeave={()=>{setColor("gray-900"); setOpacity("0"); setHidden("hidden")}} className="min-h-screen bg-gray-900 w-full group ">
-     <div className={`absolute top-1/3 left-1/3 h-96 w-96 rounded-full transition-colors  duration-700 blur-3xl bg-${color}`}>
-     </div>
-     <div className={`absolute top-1/3 left-1/3 h-96 w-96 rounded-full transition-colors duration-700 bg-${color} `}></div>
-     <img src="/itachinobg.png" alt="yoyo" className={`absolute top-[52vh] left-[81.5vh] h-[50%] transition-opacity duration-1000 opacity-${opacity} `} />
-     <div className="text-orange-400 absolute top-2/3 left-[10vh] w-72 text-3xl">Its foolish to fear what we have yet to see and know </div>
-     <div className="text-orange-400 absolute top-2/3 right-[10vh] w-72 text-3xl">People&#39;s lives don&#39;t end when they die. It ends when they lose faith.</div>
-     <div className={`text-red-700 absolute top-[42vh] left-[86vh] font-bold text-3xl transition-transform ${hidden} `}>-Itachi Uchiha</div>
-     
-    </div></div>;
+  return(
+    
+    <div className='dark:bg-gray-900 dark:text-gray-100 p-12 pb-20 md:pb-14 md:p-24 text-justify '>
+      <div className='text-3xl text-center font-black dark:text-green-500 pb-8 '>About Us</div>
+      
+    <div className='py-4'>
+      <p className='text-3xl font-bold dark:text-green-300'>About</p>
+      <p className='text-[#595959] font-semibold pt-2 dark:text-gray-400'>Words and Dreams</p>
+      <p className='pt-6'>I’ll admit it: I love communicating. Not necessarily talking or gossiping or nattering on about something. Nope. I love communicating ideas; whether in stories, blogs, books, or any of the other myriad other ways we humans have developed to entertain, frighten, and amuse. This is my new site, so, let’s play together.</p>
+    </div>
+    </div>
+  )
+    
 };
 
 export default About;

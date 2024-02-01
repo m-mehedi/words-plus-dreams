@@ -53,14 +53,14 @@ const SideBar = ({
         {user.value && (
           <Link href={"/profile"} className="items-center">
             <a
-              className="mx-2 pt-2"
+              className="mx-2 pt-0"
               onMouseEnter={() => setProfileDropdown(true)}
               onMouseLeave={() => setProfileDropdown(false)}
               onTouchStart={() => setProfileDropdown(true)}
             >
               <Image
-                height={20}
-                width={20}
+                height={30}
+                width={30}
                 src="/logged-in.jpg"
                 alt="User Logged In"
               />
@@ -78,7 +78,10 @@ const SideBar = ({
                 <Link href="/profile">Profile</Link>
               </li>
               <li className="pb-1 hover:text-gray-500 dark:hover:text-green-200 font-bold">
-                <Link href="/orders">Orders</Link>
+                <Link href="/contact">Contact</Link>
+              </li>
+              <li className="pb-1 hover:text-gray-500 dark:hover:text-green-200 font-bold">
+                <Link href="/about">About</Link>
               </li>
               <li className=" hover:text-gray-500 dark:hover:text-green-200 font-bold">
                 <a onClick={logout}>Logout</a>
@@ -93,10 +96,10 @@ const SideBar = ({
             </a>
           </Link>
         )}
-        <AiOutlineShoppingCart
+        {/* <AiOutlineShoppingCart
           onClick={toggleCart}
           className="text-xl md:text-2xl dark:text-green-300 "
-        />
+        /> */}
       </div>
       <div
         ref={ref}
@@ -105,7 +108,7 @@ const SideBar = ({
         }`}
         // overflow-y-scroll
       >
-        <h2 className="text-center font-bold text-xl">SideBar</h2>
+        <h2 className="text-center font-bold text-xl">Words+Dreams</h2>
 
         <span
           onClick={toggleCart}

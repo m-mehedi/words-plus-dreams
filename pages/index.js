@@ -7,6 +7,8 @@ import Mid from "../components/Mid";
 import FAQ from "../models/FAQ";
 import { useRouter } from "next/router";
 import AddFaqPage from "./addFaqPage";
+import CarouselCustomNavigation from "../components/Book";
+import Book from "../models/Book";
 
 const Home = ({ faqs }) => {
   const [userLoggedIn, setUserLoggedIn] = useState(null);
@@ -64,18 +66,14 @@ const Home = ({ faqs }) => {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <div className="relative">
-        <Image
-          src="/book.jpg"
-          alt=""
-          height={3000}
-          width={5000}
-          className=" opacity-30"
-        />
+        <div className="h-70vh">
+        <CarouselCustomNavigation />
+        </div>
+      <Mid />
         {/* <div className="absolute top-1/3  w-full text-center  font-bold text-3xl text-gray-400 ">Welcome to the BookStore</div> */}
-        <div className="type-bookstore absolute top-1/3  w-full text-center font-bold text-xl md:text-2xl lg:text-3xl text-gray-300"></div>
+        {/* <div className="type-bookstore absolute top-1/3  w-full text-center font-bold text-xl md:text-2xl lg:text-3xl text-gray-300"></div> */}
       </div>
 
-      <Mid />
       <div className="dark:bg-gray-900 px-5 md:px-10 lg:px-20">
         <div className="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-300 text-center my-4">
           Frequently Asked Questions
@@ -175,9 +173,13 @@ export async function getServerSideProps(context) {
     question: { $exists: true },
     answer: { $ne: "" },
   });
-  console.log(faqs);
+  
+  let books = await Book.find();
+  console.log('BOOKS: ', books);
+
+  // console.log(faqs);
   return {
-    props: { faqs: JSON.parse(JSON.stringify(faqs)) }, // will be passed to the page component as props
+    props: { faqs: JSON.parse(JSON.stringify(faqs)), books: JSON.parse(JSON.stringify(books)) }, // will be passed to the page component as props
   };
 }
 export default Home;

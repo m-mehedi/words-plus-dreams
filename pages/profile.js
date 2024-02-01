@@ -1,5 +1,5 @@
 import React from "react";
-import Delivery2 from "../components/Delivery2";
+// import Delivery2 from "../components/Delivery2";
 import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -161,7 +161,7 @@ const Profile = () => {
       <div className=" text-3xl text-center font-bold py-8 dark:text-green-300 ">
         Profile{" "}
       </div>
-      <Delivery2
+      {/* <Delivery2
         setDisabled={setDisabled}
         name={name}
         setName={setName}
@@ -177,7 +177,7 @@ const Profile = () => {
         setCity={setCity}
         state={state}
         setState={setState}
-      />
+      /> 
 
       <button
         onClick={handleUpdateDetails}
@@ -185,9 +185,9 @@ const Profile = () => {
       >
         Update Details
       </button>
-
+*/}
       <div className="text-xl font-semibold my-6 dark:text-green-300">
-        2. Change Password
+        Change Password
       </div>
       <div className="w-1/2 mb-4">
         <label
