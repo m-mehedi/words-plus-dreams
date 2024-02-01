@@ -6,6 +6,7 @@ import { Router, useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LoadingBar from 'react-top-loading-bar'
+import { ThemeProvider } from "next-themes"
 
 function MyApp({ Component, pageProps }) {
   const [cart, setCart] = useState({});
@@ -97,6 +98,7 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
+    <ThemeProvider attribute="class">
     <>
     <LoadingBar
         color='#fff'
@@ -125,6 +127,8 @@ function MyApp({ Component, pageProps }) {
       />
       <Footer />
     </>
+    </ThemeProvider>
+    
   );
 }
 

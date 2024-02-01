@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import ToggleBtn from "./ToggleBtn";
 
 import {
   AiOutlineCloseCircle,
@@ -96,10 +97,15 @@ const SideBar = ({
             </a>
           </Link>
         )}
+
+
+      <ToggleBtn />
         {/* <AiOutlineShoppingCart
           onClick={toggleCart}
           className="text-xl md:text-2xl dark:text-green-300 "
         /> */}
+
+
       </div>
       <div
         ref={ref}

@@ -10,6 +10,7 @@ import AddFaqPage from "./addFaqPage";
 import CarouselCustomNavigation from "../components/Book";
 import Book from "../models/Book";
 import { capitalize } from "@mui/material";
+import ToggleBtn from "../components/ToggleBtn";
 
 const Home = ({ faqs, books }) => {
   const [userLoggedIn, setUserLoggedIn] = useState(null);
@@ -191,6 +192,7 @@ const Home = ({ faqs, books }) => {
             {userLoggedIn?"New Query? Ask Here!":"Login to Ask Your Question/Query "} 
             </div>
           </button>
+
           {/* </Link> */}
         </div>
           {/* <div className={"transition-all duration-150 ease-out "+(animate?"animate-scalein":"animate-scaleout")}> */}

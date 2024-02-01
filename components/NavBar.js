@@ -20,7 +20,7 @@ const NavBar = ({
   // console.log(key)
   return (
     <div className="flex justify-between flex-col items-center md:flex-row md:justify-start py-1 shadow-sm sticky top-0 z-10 bg-white dark:bg-gray-900 dark:shadow-gray-500">
-      <div className="mx-5">
+      <div className="mx-5 pt-2">
         <Link href={"/"}>
           <a>
             <Image src="/N V BookStore-1.png" alt="" width={200} height={40} />
