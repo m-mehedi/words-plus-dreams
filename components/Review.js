@@ -1,9 +1,8 @@
 import React from "react";
-import Link from "next/link";
 
 import {
-  AiOutlineCloseCircle,
-  AiOutlineShoppingCart,
+  // AiOutlineCloseCircle,
+  // AiOutlineShoppingCart,
   AiOutlineMinusCircle,
   AiOutlinePlusCircle,
 } from "react-icons/ai";
@@ -12,7 +11,7 @@ const Review = ({cart, addToCart, removeFromCart,  subTotal}) => {
     
   return (
     <>
-      <div className="text-xl font-semibold mt-11 dark:text-orange-300">2.Review Cart Items</div>
+      <div className="text-xl font-semibold mt-11 dark:text-green-300">2.Review Cart Items</div>
       <div>
         
         <div className="text-base px-2 py-2 m-2 ">
@@ -39,7 +38,7 @@ const Review = ({cart, addToCart, removeFromCart,  subTotal}) => {
                             cart[k].author
                           );
                         }}
-                        className="mx-2 text-xl text-orange-600 cursor-pointer"
+                        className="mx-2 text-xl text-green-600 cursor-pointer"
                       />
                       {cart[k].qty}
                       <AiOutlinePlusCircle
@@ -52,7 +51,7 @@ const Review = ({cart, addToCart, removeFromCart,  subTotal}) => {
                             cart[k].author
                           );
                         }}
-                        className="mx-2 text-xl cursor-pointer text-orange-600"
+                        className="mx-2 text-xl cursor-pointer text-green-600"
                       />
                     </div>
                   </div>
@@ -61,7 +60,7 @@ const Review = ({cart, addToCart, removeFromCart,  subTotal}) => {
             })}
           </ol>
         
-          <div className="font-bold dark:text-orange-100" >SubTotal: ₹{subTotal}</div>
+          <div className="font-bold dark:text-green-100" >SubTotal: ${subTotal}</div>
           </div>
         </div>
       

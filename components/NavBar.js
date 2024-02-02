@@ -18,12 +18,13 @@ const NavBar = ({
   //console.log(cart, addToCart,  removeFromCart, clearCart, subTotal)
   //Keys cannot be forwarded to the component as it is a special prop
   // console.log(key)
+  
   return (
     <div className="flex justify-between flex-col items-center md:flex-row md:justify-start py-1 shadow-sm sticky top-0 z-10 bg-white dark:bg-gray-900 dark:shadow-gray-500">
       <div className="mx-5 pt-2">
         <Link href={"/"}>
           <a>
-            <Image src="/N V BookStore-1.png" alt="" width={200} height={40} />
+            <Image src="https://i.postimg.cc/VvXqq8pS/nv-cool.png" alt="" width={50} height={50} />
           </a>
         </Link>
       </div>

@@ -120,7 +120,7 @@ const Checkout = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
         crossorigin="anonymous"
         src={`${process.env.NEXT_PUBLIC_PAYTM_HOST}/merchantpgpui/checkoutjs/merchants/${process.env.NEXT_PUBLIC_PAYTM_MID}.js`}
       />
-      <div className=" text-3xl text-center font-bold py-8 dark:text-orange-300">
+      <div className=" text-3xl text-center font-bold py-8 dark:text-green-300">
         Checkout
       </div>
 
@@ -152,10 +152,10 @@ const Checkout = ({ cart, addToCart, removeFromCart, clearCart, subTotal }) => {
         <button
           onClick={initiatePayment}
           disabled={disabled}
-          className="disabled:bg-orange-200 flex mr-4 mt-5 text-white bg-orange-500 border-0 py-2 px-2 focus:outline-none hover:bg-orange-600 rounded text-lg"
+          className="disabled:bg-green-200 flex mr-4 mt-5 text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-lg"
         >
           {" "}
-          <BsFillCartCheckFill className="m-1" /> Pay ₹{subTotal}
+          <BsFillCartCheckFill className="m-1" /> Pay ${subTotal}
         </button>
       </Link>
     </div>

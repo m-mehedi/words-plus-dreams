@@ -11,10 +11,10 @@ const Footer = () => {
             <Link href={"/"}>
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 dark:text-green-600">
                 <Image
-                  src="/N V BookStore-1.png"
+                  src="https://i.postimg.cc/VvXqq8pS/nv-cool.png"
                   alt=""
-                  width={200}
-                  height={40}
+                  width={80}
+                  height={80}
                 />
               </a>
             </Link>

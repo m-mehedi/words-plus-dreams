@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import ToggleBtn from "./ToggleBtn";
+import PersonIcon from '@mui/icons-material/Person';
 
 import {
   AiOutlineCloseCircle,
@@ -59,12 +59,13 @@ const SideBar = ({
               onMouseLeave={() => setProfileDropdown(false)}
               onTouchStart={() => setProfileDropdown(true)}
             >
-              <Image
+              <PersonIcon className="text-3xl dark:text-green-300" />
+              {/* <Image
                 height={30}
                 width={30}
                 src="/logged-in.png"
                 alt="User Logged In"
-              />
+              /> */}
             </a>
           </Link>
         )}
@@ -99,12 +100,12 @@ const SideBar = ({
         )}
 
 
-      <ToggleBtn />
-        {/* <AiOutlineShoppingCart
+        <AiOutlineShoppingCart
           onClick={toggleCart}
-          className="text-xl md:text-2xl dark:text-green-300 "
-        /> */}
+          className="text-3xl dark:text-green-300 "
+        />
 
+      <ToggleBtn />
 
       </div>
       <div

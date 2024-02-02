@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import mongoose from "mongoose";
 import Book from "../../models/Book";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 
 const Post = ({ addToCart, book }) => {
   const router = useRouter();
@@ -171,7 +172,7 @@ const Post = ({ addToCart, book }) => {
                 <span className="title-font font-medium text-2xl text-gray-900 dark:text-green-400">
                   $ {book.price}
                 </span>
-                {/* <button
+                <button
                   onClick={() => {
                     addToCart(
                       book.slug,
@@ -181,13 +182,13 @@ const Post = ({ addToCart, book }) => {
                       book.author
                     );
                   }}
-                  className="flex ml-auto mr-16 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded "
+                  className="flex ml-auto mr-2 text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded "
                 >
-                  Add to Cart
-                </button> */}
+                  <ShoppingCartCheckoutIcon /> Add to Cart
+                </button>
                 <button
                   onClick = { () => location.href = `${book.link}`}
-                  className="flex ml-auto mr-16 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded "
+                  className=" text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded "
                 >
                   <ShoppingCartIcon /> Buy
                 </button>

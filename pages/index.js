@@ -10,7 +10,6 @@ import AddFaqPage from "./addFaqPage";
 import CarouselCustomNavigation from "../components/Book";
 import Book from "../models/Book";
 import { capitalize } from "@mui/material";
-import ToggleBtn from "../components/ToggleBtn";
 
 const Home = ({ faqs, books }) => {
   const [userLoggedIn, setUserLoggedIn] = useState(null);
@@ -71,9 +70,24 @@ const Home = ({ faqs, books }) => {
         <div className="h-70vh">
         <CarouselCustomNavigation />
         </div>
-      <Mid />
       
     <div>
+
+
+    <section className="text-gray-600 body-font ">
+        <div className="container px-5 py-10 mx-auto">
+          <div className="flex flex-wrap w-full  flex-col items-center text-center">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-green-300">
+            We are Words and Dreams.
+            </h1>
+            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+            We communicate, we dream wistfully about the past and predict the future with hope and fear as we struggle to create our vision of a perfect world.
+            Welcome to ever more words…and dreams 
+            </p>
+          </div>
+        </div>
+      </section>
+      
       <section className="text-gray-600 body-font dark:bg-gray-900 pb-10">
         <div className="container px-5 py-5 mx-auto">
           <div className="flex flex-wrap -m-4 justify-center space-y-4">
@@ -108,6 +122,9 @@ const Home = ({ faqs, books }) => {
         </div>
       </section>
     </div>
+
+
+    <Mid />
         {/* <div className="absolute top-1/3  w-full text-center  font-bold text-3xl text-gray-400 ">Welcome to the BookStore</div> */}
         {/* <div className="type-bookstore absolute top-1/3  w-full text-center font-bold text-xl md:text-2xl lg:text-3xl text-gray-300"></div> */}
       </div>

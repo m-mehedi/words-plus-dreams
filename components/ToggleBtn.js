@@ -12,7 +12,7 @@ const ToggleBtn = () => {
     return (
         <a
             onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}
-            className='pb-2'>
+            className='pl-5 pb-1 text-3xl dark:text-green-300'>
             {currentTheme === 'light' ? <Brightness7Icon /> :<Brightness5Icon />  }
         </a>
     )

@@ -115,7 +115,7 @@ const Login = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-500 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500 "
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-green-500 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500 "
                   placeholder="name@company.com"
                   required=""
                 />
@@ -134,7 +134,7 @@ const Login = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-green-600 focus:border-green-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                   required=""
                 />
               </div>
@@ -145,7 +145,7 @@ const Login = () => {
                       id="remember"
                       aria-describedby="remember"
                       type="checkbox"
-                      className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-orange-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-orange-600 dark:ring-offset-gray-800"
+                      className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-green-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-green-600 dark:ring-offset-gray-800"
                       required=""
                     />
                   </div>
@@ -156,21 +156,21 @@ const Login = () => {
                   </div>
                 </div>
                 <Link href={"/forgotPassword"}>
-                  <a className="text-sm font-medium text-orange-600 hover:underline dark:text-orange-500">
+                  <a className="text-sm font-medium text-green-600 hover:underline dark:text-green-500">
                     Forgot password?
                   </a>
                 </Link>
               </div>
               <button
                 type="submit"
-                className="w-full text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                className="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
               >
                 Sign in
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Dont have an account yet?{" "}
                 <Link href={"/signup"}>
-                  <a className="font-medium text-orange-600 hover:underline dark:text-orange-500">
+                  <a className="font-medium text-green-600 hover:underline dark:text-green-500">
                     Sign up
                   </a>
                 </Link>
