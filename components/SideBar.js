@@ -100,10 +100,10 @@ const SideBar = ({
         )}
 
 
-        <AiOutlineShoppingCart
+        {/* <AiOutlineShoppingCart
           onClick={toggleCart}
           className="text-3xl dark:text-green-300 "
-        />
+        /> */}
 
       <ToggleBtn />
 
