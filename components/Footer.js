@@ -1,6 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LanguageIcon from '@mui/icons-material/Language';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import SecurityIcon from '@mui/icons-material/Security';
+import PeopleIcon from '@mui/icons-material/People';
+import InterestsIcon from '@mui/icons-material/Interests';
+import CategoryIcon from '@mui/icons-material/Category';
 
 const Footer = () => {
   return (
@@ -19,6 +26,9 @@ const Footer = () => {
               </a>
             </Link>
             <div className="mt-2 ml-2 px-1 text-sm text-gray-500 dark:text-green-300">
+              <h1>Words + Dreams</h1>
+              <h2 className="title-font font-medium text-gray-900 dark:text-green-600 tracking-widest text-sm mb-3"> Category
+              </h2>
               <ul className="">
                 <li className="hover:text-gray-800 dark:hover:text-green-800 ">
                   <a href={"/novel"}>
@@ -69,7 +79,7 @@ const Footer = () => {
             </div> */}
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 dark:text-green-600 tracking-widest text-sm mb-3">
-                CUSTOMER SERVICE
+                <PeopleIcon /> CUSTOMER SERVICE
               </h2>
               <nav className="list-none mb-10">
                 <li>
@@ -100,7 +110,8 @@ const Footer = () => {
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 dark:text-green-600 tracking-widest text-sm mb-3">
-                POLICY
+                
+              <SecurityIcon/> POLICY
               </h2>
               <nav className="list-none mb-10">
                 <li>
@@ -123,34 +134,34 @@ const Footer = () => {
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 dark:text-green-600 tracking-widest text-sm mb-3">
-                SOCIALS
+               <InterestsIcon /> SOCIALS
               </h2>
               <nav className="list-none mb-10">
-                <li>
+                <li className="p-1">
                   <a
                     href={"https://www.facebook.com/milespb1"}
                     target="blank"
                     className=" hover:text-gray-800 dark:hover:text-green-800"
                   >
-                    Facebook
+                    <FacebookIcon /> Facebook
                   </a>
                 </li>
-                <li>
+                <li className="p-1">
                   <a
                     href={"https://www.pinterest.com/milesbeauchamp/"}
                     target="blank"
                     className=" hover:text-gray-800 dark:hover:text-green-800"
                   >
-                    Pinterest
+                    <PinterestIcon /> Pinterest
                   </a>
                 </li>
-                <li>
+                <li className="p-1">
                   <a
                     href={"https://www.amazon.com/author/miles"}
                     target="blank"
                     className=" hover:text-gray-800 dark:hover:text-green-800"
                   >
-                    Amazon
+                    <LanguageIcon /> Amazon
                   </a>
                 </li>
               </nav>

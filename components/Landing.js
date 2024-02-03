@@ -16,7 +16,7 @@ export default function LandingCarousel() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              Words and Dreams
+              Words + Dreams
             </Typography>
             <Typography
               variant="lead"
@@ -41,7 +41,7 @@ export default function LandingCarousel() {
               color="white"
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
-              Words and Dreams
+              Words + Dreams
             </Typography>
             <Typography
               variant="lead"

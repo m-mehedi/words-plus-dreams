@@ -2,6 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
+    
   <div className="flex min-h-screen items-center justify-start bg-white dark:bg-gray-900">
   <div className="mx-auto w-full max-w-lg">
     <h1 className="text-3xl font-medium dark:text-green-400 ">Contact us</h1>

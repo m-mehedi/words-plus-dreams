@@ -15,8 +15,26 @@ const About = () => {
       
     <div className='py-4'>
       <p className='text-3xl font-bold dark:text-green-300'>About</p>
-      <p className='text-[#595959] font-semibold pt-2 dark:text-gray-400'>Words and Dreams</p>
+      <p className='text-[#595959] font-semibold pt-2 dark:text-gray-400'>Words + Dreams</p>
       <p className='pt-6'>I’ll admit it: I love communicating. Not necessarily talking or gossiping or nattering on about something. Nope. I love communicating ideas; whether in stories, blogs, books, or any of the other myriad other ways we humans have developed to entertain, frighten, and amuse. This is my new site, so, let’s play together.</p>
+    </div>
+    <div>
+    &nbsp;
+    </div>
+    <div>
+    &nbsp;
+    </div>
+    <div>
+    &nbsp;
+    </div>
+    <div>
+    &nbsp;
+    <br></br>
+
+    &nbsp;
+    </div>
+    <div>
+    &nbsp;
     </div>
     </div>
   )
