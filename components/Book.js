@@ -29,7 +29,7 @@ export function CarouselCustomNavigation() {
               Miles Beauchamp
           </Typography>
           <div className="flex gap-2">
-            <Button onClick={ () => {location.href = 'https://www.amazon.com/Still-Amazed-Collection-Miles-Beauchamp/dp/1734885734/'}} size="lg" color="white">
+            <Button onClick={ () => {location.href = 'https://www.amazon.com/Still-Amazed-Collection-Miles-Beauchamp/dp/1734885734/'}} size="lg" color="green">
              <ShoppingCartIcon /> Buy
             </Button>
             <Button onClick={ () => {location.href = '#'}} size="lg" color="white/75">
@@ -62,7 +62,7 @@ export function CarouselCustomNavigation() {
                 Miles Beauchamp
             </Typography>
             <div className="flex gap-2">
-              <Button onClick={ () => {location.href = '#'}} size="lg" color="white">
+              <Button onClick={ () => {location.href = '#'}} size="lg" color="cyan">
                <DownloadingIcon /> Coming soon
               </Button>
               <Button onClick={ () => {location.href = '#'}} size="lg" color="white/75">
@@ -95,7 +95,7 @@ export function CarouselCustomNavigation() {
                 Miles Beauchamp
             </Typography>
             <div className="flex gap-2">
-              <Button onClick={ () => {location.href = 'https://www.amazon.com/Disabled-Literature-Examination-Disabilities-Contemporary-ebook/dp/B0116IBL5M/'}} size="lg" color="white">
+              <Button onClick={ () => {location.href = 'https://www.amazon.com/Disabled-Literature-Examination-Disabilities-Contemporary-ebook/dp/B0116IBL5M/'}} size="lg" color="red">
                <ShoppingCartIcon /> Buy
               </Button>
 

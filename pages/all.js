@@ -4,12 +4,17 @@ import Link from "next/link";
 import Book from "../models/Book";
 import mongoose from "mongoose";
 import { capitalize } from "@mui/material";
+import CarouselCustomNavigation from "../components/Book";
 
 const All = ({ books }) => {
   //console.log(books);
   
   return (
     <div>
+
+      <div className="h-70vh">
+        <CarouselCustomNavigation />
+      </div>
       <section className="text-gray-600 body-font dark:bg-gray-900">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 justify-center space-y-4">

@@ -7,9 +7,10 @@ import Mid from "../components/Mid";
 import FAQ from "../models/FAQ";
 import { useRouter } from "next/router";
 import AddFaqPage from "./addFaqPage";
-import CarouselCustomNavigation from "../components/Book";
 import Book from "../models/Book";
 import { capitalize } from "@mui/material";
+import LandingCarousel from "../components/Landing";
+import { Button } from "@material-tailwind/react";
 
 const Home = ({ faqs, books }) => {
   const [userLoggedIn, setUserLoggedIn] = useState(null);
@@ -66,11 +67,9 @@ const Home = ({ faqs, books }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <div className="relative">
-        <div className="h-70vh">
-        <CarouselCustomNavigation />
-        </div>
-      
+
+    <div className="relative">
+        <LandingCarousel />
     <div>
 
 
@@ -121,6 +120,11 @@ const Home = ({ faqs, books }) => {
           </div>
         </div>
       </section>
+      <div className="container px-5 py-5 text-center mx-auto">
+      <Button onClick={()=> { location.href = '/all'}} variant="contained" color="green">
+        Load more..
+      </Button>
+</div>
     </div>
 
 
