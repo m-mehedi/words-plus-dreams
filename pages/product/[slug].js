@@ -188,7 +188,7 @@ const Post = ({ addToCart, book }) => {
                 </button> */}
                 <button
                   onClick = { () => location.href = `${book.link}`}
-                  className="flex ml-auto mr-2 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded "
+                  className="flex ml-auto mr-2 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded "
                 >
                   <ShoppingCartIcon /> Buy
                 </button>
