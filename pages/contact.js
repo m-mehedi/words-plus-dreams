@@ -1,36 +1,50 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
   return (
-    
-  <div className="flex min-h-screen items-center justify-start bg-white dark:bg-gray-900">
-  <div className="mx-auto w-full max-w-lg">
-    <h1 className="text-3xl font-medium dark:text-green-400 ">Contact us</h1>
-    {/* <p className="mt-3 dark:text-green-200">Email me at <span className='italic text-green-500 dark:text-blue-100'>nv.nandanvyas@gmail.com</span> or message here:</p> */}
-    <p className="mt-3 dark:text-green-200">Feel free to contact me anytime. I may not respond right away if I’m in the middle of a project but, like many authors I know, I look for excuses to procrastinate.</p>
+    <div className="flex items-center justify-center min-h-screen bg-white dark:bg-gray-900">
 
-    <form action="https://api.web3forms.com/submit" method='POST' className="mt-10">
-    <input type="hidden" name="access_key" value="66619689-10ee-4b96-97ac-c6defa916d61" />
-      <div className="grid gap-6 sm:grid-cols-2">
-      <div className="relative z-0">
-          <input type="text" name="name" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 dark:text-green-300 focus:border-green-600 focus:outline-none focus:ring-0" placeholder=" " />
-          <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-600 peer-focus:dark:text-green-500">Your name</label>
-        </div>
-        <div className="relative z-0">
-          <input type="text" name="email" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 dark:text-green-300 focus:border-green-600 focus:outline-none focus:ring-0" placeholder=" " />
-          <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-600 peer-focus:dark:text-green-500">Your email</label>
-        </div>
-        <div className="relative z-0 col-span-2">
-          <textarea name="message" rows="5" className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 dark:text-green-300 focus:border-green-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-          <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-600 peer-focus:dark:text-green-500">Your message</label>
+      <div className='dark:bg-gray-900 dark:text-gray-100 p-12 pb-20 md:pb-14 md:p-24 lg:p-24 text-justify'>
+        <div className='text-4xl text-center font-black dark:text-green-500 pb-8 '>Contact us</div>
+
+        {/* Image and content stack on top of each other on small devices */}
+        <div className="w-full md:flex">
+          {/* Right two-thirds for the content on large devices */}
+          <div className="w-full md:w-1/2 mx-auto max-w-lg p-8">
+            <h2 className="text-2xl font-medium dark:text-green-400">Send me your feedback</h2>
+            <p className="mt-3 dark:text-green-200">
+              Feel free to contact me anytime. I may not respond right away if I’m in the middle of a project, but, like many authors I know, I look for excuses to procrastinate.
+            </p>
+            <p className="mt-3 dark:text-green-200">
+              You can contact me or send your feedback by{' '}
+              <a href="mailto:miles@mpb.me" className="text-green-500 underline">
+                clicking
+              </a>
+              &nbsp; the button below.
+            </p>
+            <button
+              type="submit"
+              onClick={() => {
+                window.location.href = 'mailto:miles@mpb.me';
+              }}
+              className="flex mr-4 mt-5 text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-lg"
+            >
+              Contact Us
+            </button>
+          </div>
+
+          {/* Left third for the image on large devices, aligned to the right */}
+          <div className="w-full md:w-1/2 p-15 md:order-first">
+            <img
+              src="https://i.postimg.cc/mg9bbWNw/contact.png"
+              alt="Contact us"
+              className="w-full"
+            />
+          </div>
         </div>
       </div>
-      <button type="submit" className='flex mr-4 mt-5 text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-lg'>Send Message</button>
-    </form>
-  </div>
-</div>
-  
-  )
-}
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
