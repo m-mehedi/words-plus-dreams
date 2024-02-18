@@ -1,6 +1,21 @@
+import { useEffect, useState } from "react";
 import { Carousel, Typography, Button } from "@material-tailwind/react";
- 
+// import useSound from 'use-sound';
+// const boopSfx = 'https://mehedi-dev.s3.ap-south-1.amazonaws.com/resources/sound.mp3'
+
+
 export default function LandingCarousel() {
+  // const [play] = useSound(boopSfx, { volume: 0.10 });
+  // const [isReady, setIsReady] = useState(false);
+
+  
+  useEffect(() => {
+    return () => {
+      {play}
+      console.log("Firing on mount and not on cleanup");
+    };
+  }, []);
+
   return (
     <Carousel className="rounded-xl">
       <div className="relative h-60vh w-full">

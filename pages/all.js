@@ -5,7 +5,6 @@ import Book from "../models/Book";
 import mongoose from "mongoose";
 import { capitalize } from "@mui/material";
 import CarouselCustomNavigation from "../components/Book";
-
 const All = ({ books }) => {
   //console.log(books);
   

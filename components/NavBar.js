@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 // import {AiOutlineShoppingCart} from 'react-icons/ai'
 import SideBar from "./SideBar";
+import useSound from 'use-sound';
+const boopSfx = 'https://mehedi-dev.s3.ap-south-1.amazonaws.com/resources/sound.mp3'
 
 const NavBar = ({
   logout,
@@ -13,7 +15,8 @@ const NavBar = ({
   clearCart,
   subTotal,
 }) => {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
+  const [play] = useSound(boopSfx, { volume: 0.10 });
   // console.log(search)
   //console.log(cart, addToCart,  removeFromCart, clearCart, subTotal)
   //Keys cannot be forwarded to the component as it is a special prop
@@ -32,7 +35,7 @@ const NavBar = ({
         <ul className="flex items-center space-x-4 font-bold md:text-base dark:text-gray-100">
           <Link href="/">
             <a>
-              <li>Home</li>
+              <li onClick={play}>Home</li>
             </a>
           </Link>
           <Link href="/all">
